@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Accesibilidad (A11y) | UAB</title>
+<meta name="description" content="Declaración de accesibilidad del sitio: semántica, foco visible, contraste, navegación por teclado, imágenes con alt y etiquetas correctas.">
+<link rel="canonical" href="/ada.html">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip-link" href="#contenido">Saltar al contenido</a>
+<header class="site-header">
+<div class="container">
+<h1 class="site-title"><a href="index.html">UAB · Series & Películas Favoritas</a></h1>
+<nav class="site-nav" aria-label="Navegación principal">
+<ul>
+<li><a href="index.html">Inicio (Freddy)</a></li>
+<li><a href="jheny.html">Jheny</a></li>
+<li><a href="kevin.html">Kevin</a></li>
+<li><a href="marco.html">Marco</a></li>
+<li><a href="peter.html">Peter</a></li>
+<li><a href="jhilda.html">Jhilda</a></li>
+<li><a href="ada.html" aria-current="page">Accesibilidad</a></li>
+</ul>
+</nav>
+</div>
+</header>
+
+
+<main id="contenido" tabindex="-1" class="container">
+<h2>Accesibilidad (A11y)</h2>
+<p>Compromiso: que el sitio sea usable por la mayor cantidad de personas posible. Implementamos:</p>
+<ul>
+<li>Landmarks: <code>header</code>, <code>nav</code>, <code>main</code>, <code>footer</code>.</li>
+<li>Orden de encabezados correcto (h1 → h2 → h3).</li>
+<li>Enlace «Saltar al contenido» visible al enfocar.</li>
+<li>Foco visible con <code>:focus-visible</code>; no lo ocultamos.</li>
+<li>Contraste suficiente (texto principal sobre fondo claro).</li>
+<li>Imágenes con <code>alt</code> descriptivo; decorativas sin texto alternativo.</li>
+<li>Enlaces con texto significativo y <code>rel="noopener noreferrer"</code> al abrir en pestaña nueva.</li>
+<li>Soporte de <code>prefers-reduced-motion</code>.</li>
+</ul>
+</main>
+
+
+<footer class="site-footer"><div class="container"><p><small><a href="index.html">Volver a Inicio</a></small></p></div></footer>
+</body>
+</html>
