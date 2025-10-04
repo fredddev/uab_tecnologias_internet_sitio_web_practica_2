@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- CAMBIAR: nombre del integrante y su serie/película favorita -->
+  <title>Series y Películas Favoritas | Jhilda — El Señor de los Anillos (Trilogia)</title>
+
+  <!-- SEO básico -->
+  <!-- CAMBIAR: descripción corta (máx. 155 caracteres) mencionando la obra e integrante -->
+  <meta name="description" content="Proyecto del equipo UAB: cada integrante reseña su serie o película favorita. Inicio por Freddy: La ley de los audaces (Suits). Sitio accesible (A11y) y SEO básico.">
+
+  <meta name="theme-color" content="#0b5fff">
+  <meta property="og:title" content="Series y Películas Favoritas — UAB">
+  <meta property="og:description" content="Sitio estático accesible con reseñas de series y películas favoritas del equipo.">
+
+  <!-- CAMBIAR: canonical → reemplazar index.html por el nombre del archivo de cada integrante -->
+  <link rel="canonical" href="/jhilda.html">
+
+  <!-- CSS -->
+  <link rel="preload" href="styles.css" as="style">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Skip link: accesibilidad -->
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <!-- Encabezado principal con navegación -->
+  <header class="site-header" role="banner">
+    <div class="container">
+      <h1 class="site-title">UAB · Series & Películas Favoritas</h1>
+      <nav class="site-nav" aria-label="Navegación principal">
+        <ul>
+          <!-- CAMBIAR: marcar con aria-current="page" solo el archivo actual -->
+          <li><a href="index.html" >Inicio (Freddy)</a></li>
+          <li><a href="jheny.html">Jheny</a></li>
+          <li><a href="kevin.html">Kevin</a></li>
+          <li><a href="marco.html">Marco</a></li>
+          <li><a href="peter.html">Peter</a></li>
+          <li><a href="jhilda.html"aria-current="page">Jhilda</a></li>
+          <li><a href="ada.html">Accesibilidad</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Contenido principal -->
+  <main id="contenido" tabindex="-1" class="container" role="main">
+    <!-- CAMBIAR: texto del h2 si quieren personalizar -->
+    <h2>Bienvenido a conocer la pelicula favorita de Jhilda</h2>
+    <p>Este sitio reúne las reseñas personales de nuestro equipo sobre su <strong> serie o película favorita</strong>. Está construido con <em>solo HTML5 y CSS</em>, siguiendo buenas prácticas de <abbr title="Accesibilidad">A11y</abbr> y SEO básico.</p>
+
+    <!-- Sección de la reseña -->
+    <!-- CAMBIAR: lo que diga freddy-h por sunombre-h -->
+    <section aria-labelledby="freddy-h" class="grid-2">
+      <div>
+        <!-- CAMBIAR: nombre del integrante y título de la obra -->
+        <h3 id="jhilda-h">Reseña de Jhilda: <span lang="en">El Señor de los Anillos (Trilogia)</span></h3>
+
+        <!-- CAMBIAR: sinopsis personal -->
+        <p>
+          La trilogia del Señor de los Anillos trata sobre destruir <strong> el anillo unico </strong> y <strong> el hobbit Frodo Bolsón. </strong> Frodo, junto a sus compañeros de la Comunidad del Anillo, emprende un peligroso viaje hacia el Monte del Destino en Mordor, el único lugar donde el anillo puede ser destruido. La historia combina la aventura de los pequeños hobbits con la guerra a gran escala que se desata contra las fuerzas de Sauron, liderada por el mago Gandalf y el futuro rey Aragorn. 
+
+        <!-- CAMBIAR: datos básicos de la obra -->
+        <ul>
+          <li><strong>Género:</strong> Fantasia</li>
+          <li><strong>Volumenes:</strong> 3</li>
+          <li><strong>Disponible en:</strong> HBO</li>
+        </ul>
+
+        <!-- CAMBIAR: enlace externo a Wikipedia, sitio oficial u otra fuente -->
+        <p class="muted">Más información: 
+          <a href="https://es.wikipedia.org/wiki/Trilog%C3%ADa_cinematogr%C3%A1fica_de_El_Se%C3%B1or_de_los_Anillos" target="_blank" rel="noopener noreferrer">Artículo en Wikipedia (se abre en nueva pestaña)</a>.
+        </p>
+      </div>
+      <!-- CAMBIAR: si pondra una imagen debe ponerla en la carpeta img -->
+      <figure>
+        <img src="img/imagenaliz.jpg" alt="Logotipo o póster de la serie Suits: La ley de los audaces" width="212"
+                    height="50">
+        <figcaption>«El Señor de los Anillos» — Trilogia.</figcaption>
+      </figure>
+    </section>
+
+    <!-- Listado de integrantes -->
+    <!-- (no necesitan cambiar esto, se mantiene igual en todas las páginas) -->
+    <section aria-labelledby="equipo-h" class="card">
+      <h3 id="equipo-h">Integrantes y páginas</h3>
+      <p>Visita cada reseña individual:</p>
+      <ul class="cols">
+        <li><a href="jheny.html">Jheny Chirinos Moreira</a></li>
+        <li><a href="kevin.html">Kevin Stiven Copali Mendieta</a></li>
+        <li><a href="marco.html">Marco Antonio Copa Sarzuri</a></li>
+        <li><a href="peter.html">Peter Camacho Cardozo</a></li>
+        <li><a href="jhilda.html">Jhilda Achacollo</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <!-- Pie de página -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <p><small>© 2025 UAB · Sitio estático accesible. <a href="ada.html">Declaración de Accesibilidad</a></small></p>
+    </div>
+  </footer>
+</body>
+</html>
