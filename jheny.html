@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- nombre del integrante y su serie/película favorita -->
+  <title>Series y Películas Favoritas | JHENY - RAPIDOS Y FURIOSOS (serie)</title>
+
+  <!-- SEO básico -->
+  <!-- descripción corta (máx. 155 caracteres) mencionando la obra e integrante -->
+  <meta name="description" content="Jheny Chirinos Moreira reseña su película favorita: Papidos y Furiosos, una serie irreverente protagonizada por Eddie Murphy. Proyecto UAB con enfoque accesible y SEO básico.">
+
+  <meta name="theme-color" content="#0b5fff">
+  <meta property="og:title" content="Series y Películas Favoritas — UAB">
+  <meta property="og:description" content="Sitio estático accesible con reseñas de series y películas favoritas del equipo.">
+
+  <!-- canonical →  nombre del archivo-->
+  <link rel="canonical" href="/jheny.html">
+
+  <!-- CSS -->
+  <link rel="preload" href="styles.css" as="style">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Skip link: accesibilidad -->
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <!-- Encabezado principal con navegación -->
+  <header class="site-header" role="banner">
+    <div class="container">
+      <h1 class="site-title">UAB · Series & Películas Favoritas</h1>
+      <nav class="site-nav" aria-label="Navegación principal">
+        <ul>
+          <!-- arcar  el archivo actual -->
+          <li><a href="index.html">Inicio (Freddy)</a></li>
+          <li><a href="jheny.html">Jheny</a></li>
+          <li><a href="kevin.html">Kevin</a></li>
+          <li><a href="marco.html">Marco</a></li>
+          <li><a href="peter.html"aria-current="page">Peter</a></li>
+          <li><a href="jhilda.html">Jhilda</a></li>
+          <li><a href="ada.html">Accesibilidad</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Contenido principal -->
+  <main id="contenido" tabindex="-1" class="container" role="main">
+   
+    <h2>Bienvenido al mundo de la SERIE</h2>
+    <p>Este sitio reúne las reseñas personales de nuestro equipo sobre su <strong>serie o película favorita</strong>. Está construido con <em>solo HTML5 y CSS</em>, siguiendo buenas prácticas de <abbr title="Accesibilidad">A11y</abbr> y SEO básico.</p>
+
+    <!-- Sección de la reseña -->
+    
+    <section aria-labelledby="peter-h" class="grid-2">
+      <div>
+       
+        <h3 id="peter-h">Reseña de JHENY: <span lang="en">RAPIDOS Y FURIOSOS</span></h3>
+
+        <!-- sinopsis personal -->
+        <p>
+           «Rapidos y Furiosos»Es una franquicia de medios estadounidense centrado por <strong>Gary Scott Thompson</strong> es una serie de películas de acción que se ocupan en gran medida de automóviles. La saga también incluye cortometrajes, una serie de televisión, espectáculos en vivo, videojuegos y atracciones de parques temáticos. 
+
+        </p>
+
+        <!-- datos básicos de la obra -->
+        <ul>
+          <li><strong>Género:</strong> Serie</li>
+          <li><strong>Duracion de Gana:</strong> 20 horas con 27 minutos</li>
+          <li><strong>Disponible en:</strong> Prime Video y otras plataformas</li>
+        </ul>
+
+        <!--  enlace externo  -->
+        <p class="muted">Más información: 
+          <a href="https://es.wikipedia.org/wiki/Fast_%26_Furious_(franquicia)" target="_blank" rel="noopener noreferrer">Link de la pelicual en la plataforma <strong>Prime Video</strong></a>.
+        </p>
+      </div>
+      <!--  imagen  -->
+      <figure>
+        <img src="img/fast1.jpg" alt="Logotipo o póster de la pelicula RAPIDOS Y FURIOSOS" width="212"
+                    height="50">
+        <figcaption>«RAPIDOS Y FURIOSOS» --SERIE (2001) .</figcaption>
+      </figure>
+    </section>
+
+    <!-- Listado de integrantes -->
+    
+    <section aria-labelledby="equipo-h" class="card">
+      <h3 id="equipo-h">Integrantes y páginas</h3>
+      <p>Visita cada reseña individual:</p>
+      <ul class="cols">
+        <li><a href="jheny.html">Jheny Chirinos Moreira</a></li>
+        <li><a href="kevin.html">Kevin Stiven Copali Mendieta</a></li>
+        <li><a href="marco.html">Marco Antonio Copa Sarzuri</a></li>
+        <li><a href="peter.html">Peter Camacho Cardozo</a></li>
+        <li><a href="jhilda.html">Jhilda Achacollo</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <!-- Pie de página -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <p><small>© 2025 UAB · Sitio estático accesible. <a href="ada.html">Declaración de Accesibilidad</a></small></p>
+    </div>
+  </footer>
+</body>
+</html>
